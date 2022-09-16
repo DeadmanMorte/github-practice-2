@@ -1,0 +1,103 @@
+* {
+    /* border: 1px solid teal; */
+
+}    
+@import url(//db.onlinewebfonts.com/c/6ca68131925d7aa08c97e57d9e8b2ed7?family=Cloister+Black);
+@font-face {font-family: "Cloister Black"; src: url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.eot"); src: url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.woff") format("woff"), url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6ca68131925d7aa08c97e57d9e8b2ed7.svg#Cloister Black") format("svg"); }
+:root {
+    --pale-sage: #BFF4CB;
+    --sage: #84A98C;
+    --dusty-emerald: #52796f;
+    --deep-emerald: #40d5e6;
+    --night-forest: #00a0f7;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+    text-align: center;
+    background-image:linear-gradient(#84A98C,#52796f);
+    color: #FFEEE2;
+  }                  
+  
+h1 {
+  font-size:5em;
+  font-family:"Cloister Black";
+  margin: .5em 9em 0 -7em;
+}
+
+.side-title {
+  justify-content: flex-end;
+  font-size:xx-small;
+  display:flex;
+  align-self:baseline;
+}
+
+h2 {
+  display:inline;
+  justify-content:center;
+  position:sticky;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}                  
+li {
+  list-style: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin:1em 0 1em 0;
+}
+
+ul {
+opacity:0;
+transition-duration:1s;
+}
+
+ul:hover {
+  opacity:1;
+}
+
+main {
+    min-height: 60vh;
+    flex-grow: 5;
+  }
+    
+nav {
+    background-color: var(--dusty-emerald);
+    flex-grow: 2;
+  }
+  
+p {
+    font-family:Lato;
+  }
+  footer, header {
+    background-color: var(--sage);
+    flex: 1 1 100%;
+  }                             
+   iframe {
+    border-radius:5%;
+   }
+   .hidey {
+    opacity:0;
+    transition-duration: 1s;
+   }
+   .hidey:hover {
+    opacity:1;
+   }
+
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    main {
+      max-width: 60%;
+    }
+    header, footer {
+      width: 100%;
+    }
+  }                                  
